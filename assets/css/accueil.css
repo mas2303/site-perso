@@ -81,3 +81,33 @@ body.page-accueil .header-crev .img-author .box-shadwo h2 {
     padding-bottom: 60px;
   }
 }
+
+/* Smartphone : hero accueil */
+@media (max-width: 576px) {
+  body.page-accueil .header-crev {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  body.page-accueil .header-crev .content h1 {
+    font-size: 1.65rem !important;
+  }
+  body.page-accueil .header-crev .content .sub-title {
+    font-size: 0.8rem;
+  }
+  body.page-accueil .header-crev .content .mt-50 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  body.page-accueil .header-crev .content .mt-50 .butn {
+    width: 100%;
+    margin: 0 !important;
+    justify-content: center;
+  }
+  body.page-accueil .header-crev .img-author img {
+    max-height: 280px;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+  }
+}

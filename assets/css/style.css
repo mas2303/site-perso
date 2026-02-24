@@ -5669,13 +5669,32 @@ img.left {
   .navbar .bg {
     position: absolute;
     left: 0;
+    right: 0;
     top: 65px;
     display: none;
     width: 100%;
+    box-sizing: border-box;
     height: auto;
     background: #0c0c0c;
     padding: 20px 30px;
     border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .navbar .bg .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar .bg .navbar-nav .nav-item {
+    margin: 0;
+    width: 100%;
+  }
+  .navbar .bg .navbar-nav .nav-link {
+    display: block;
+    padding: 12px 0;
+    margin: 0;
+    min-height: 44px;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
   }
   .navbar .social {
     display: none !important;
@@ -6068,6 +6087,116 @@ img.left {
   }
   .comments-post .item-box.replayed {
     margin-left: 0;
+  }
+}
+
+/* Smartphones (portrait et petit écran) */
+@media screen and (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+  main .row > [class*="col-lg-"],
+  section .row > [class*="col-lg-"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100%;
+  }
+  main.pt-80 {
+    padding-top: 50px !important;
+  }
+  .navbar .bord {
+    padding: 8px 12px;
+  }
+  .navbar .logo.logo-text {
+    font-size: 0.95rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 140px;
+  }
+  .navbar .bg {
+    top: 55px;
+    padding: 15px 20px;
+    left: 15px;
+    right: 15px;
+    width: auto;
+  }
+  .navbar .bg .navbar-nav .nav-link {
+    padding: 14px 0;
+  }
+  .sec-head.mb-40,
+  .sec-head.mb-80 {
+    margin-bottom: 30px !important;
+  }
+  .sec-head h3 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+  .portfolio.section-padding {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .portfolio .items {
+    margin-top: 25px;
+  }
+  .portfolio .item .cont {
+    padding: 15px 10px 10px;
+  }
+  .portfolio .item .cont h6 {
+    font-size: 0.95rem;
+  }
+  .testimonials .item {
+    padding: 25px 15px;
+  }
+  .testimonials .item .cont p {
+    font-size: 0.9rem;
+  }
+  .testimonials .item .d-flex.align-items-center .ml-30 {
+    margin-left: 15px;
+  }
+  .testimonials .item .img {
+    width: 50px;
+    height: 50px;
+  }
+  .header-crev {
+    padding-top: 80px !important;
+    padding-bottom: 50px !important;
+  }
+  .header-crev .content h1 {
+    font-size: 1.75rem !important;
+    line-height: 1.25;
+  }
+  .header-crev .content .text p {
+    font-size: 0.95rem;
+  }
+  .header-crev .content .mt-50 .butn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .header-crev .content .mt-50 .butn.ml-15 {
+    margin-left: 0 !important;
+  }
+  .section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  footer .container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  footer p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  .progress-wrap {
+    right: 8px;
+    bottom: 16px;
   }
 }
 
