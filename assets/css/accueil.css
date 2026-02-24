@@ -82,6 +82,13 @@ body.page-accueil .header-crev .img-author .box-shadwo h2 {
   }
 }
 
+/* Mobile : masquer l'image et "100% Sur mesure" */
+@media (max-width: 768px) {
+  body.page-accueil .header-crev .row > .col-lg-6:last-child {
+    display: none !important;
+  }
+}
+
 /* Smartphone : hero accueil */
 @media (max-width: 576px) {
   body.page-accueil .header-crev {

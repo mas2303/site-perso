@@ -6090,6 +6090,13 @@ img.left {
   }
 }
 
+/* Masquer le curseur personnalisé sur tablette et smartphone */
+@media screen and (max-width: 768px) {
+  .cursor {
+    display: none !important;
+  }
+}
+
 /* Smartphones (portrait et petit écran) */
 @media screen and (max-width: 576px) {
   body {
