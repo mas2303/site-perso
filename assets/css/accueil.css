@@ -1,0 +1,83 @@
+/* Page d'accueil : adaptation à l'écran (hero plus grand, meilleure lisibilité) */
+
+/* Logo en haut à gauche (pas en gras sur l'accueil) */
+body.page-accueil .navbar .logo.logo-text {
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Hero pleine hauteur et contenu centré verticalement */
+body.page-accueil .header-crev {
+  min-height: calc(100vh - 80px);
+  padding-top: 100px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+}
+
+body.page-accueil .header-crev .container {
+  max-width: 1280px;
+  width: 100%;
+}
+
+/* Titre et textes plus grands sur grand écran */
+body.page-accueil .header-crev .content h1 {
+  font-size: clamp(2.5rem, 5vw + 1rem, 5.25rem);
+  line-height: 1.15;
+}
+
+body.page-accueil .header-crev .content .sub-title {
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
+}
+
+body.page-accueil .header-crev .content .text p {
+  font-size: clamp(0.95rem, 1.1vw, 1.15rem);
+  line-height: 1.65;
+  max-width: 520px;
+}
+
+/* Boutons et ligne de réassurance */
+body.page-accueil .header-crev .content .mt-50 .butn {
+  padding: 1rem 1.75rem;
+  font-size: 1rem;
+}
+
+body.page-accueil .header-crev .content .mt-30.fz-13 {
+  font-size: 0.95rem;
+}
+
+/* Image côté droit : meilleure proportion sur grand écran */
+body.page-accueil .header-crev .img-author img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* "100% sur mesure" au-dessus de l'image (plus caché), fond gris plus transparent */
+body.page-accueil .header-crev .img-author .box-shadwo {
+  z-index: 5;
+  background-color: rgba(12, 12, 12, 0.72);
+}
+
+body.page-accueil .header-crev .img-author .box-shadwo h2 {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+}
+
+@media (min-width: 992px) {
+  body.page-accueil .header-crev {
+    min-height: calc(100vh - 90px);
+    padding-top: 120px;
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 991px) {
+  body.page-accueil .header-crev {
+    min-height: auto;
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+}
